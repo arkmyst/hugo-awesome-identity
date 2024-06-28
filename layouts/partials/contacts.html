@@ -13,6 +13,14 @@
   <a class="contact" href="https://facebook.com/{{ $id }}" target="_blank">
     <i class="fab fa-facebook" aria-hidden="true"></i>
   </a>
+    {{- else if (eq $service "cv") }}
+  <a class="contact" href="{{ $id }}" target="_blank">
+    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+  </a>
+    {{- else if (eq $service "leetcode") }}
+  <a class="contact" href="https://leetcode.com/u/{{ $id }}" target="_blank">
+    <i class="fas fa-code" aria-hidden="true"></i>
+  </a>
     {{- else if (eq $service "linkedin") }}
   <a class="contact" href="https://linkedin.com/in/{{ $id }}" target="_blank">
     <i class="fab fa-linkedin" aria-hidden="true"></i>

@@ -6,7 +6,8 @@
       <div class="img" style="background-image: url('{{ .portrait | default "/images/portrait-default.png" | relURL }}')"></div>
     </a>
   </div>
-  <h1 class="name">{{ .firstname }} <b>{{ .lastname }}</b></h1>
+  <!-- <h1 class="name">{{ .firstname }} <b>{{ .lastname }}</b></h1> -->
+  <h1 class="name"><img src="/small_logo.png" style="height: 5.5rem; margin-bottom: -1.8rem"/>{{ .firstname }} <b>{{ .lastname }}</b></h1>
   {{ with .title -}}
   <h2 class="title">{{ . }}</h2>
   {{- end }}
