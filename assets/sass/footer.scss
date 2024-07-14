@@ -9,11 +9,11 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 10px; // 18px originally 
+    padding-bottom: 10px;// 18px originally 
     border: 0;
-    // border-top: 1px solid #eee;
-    border-top: 1px solid $color-light-grey;
+    border-top: 1px solid #eee;
+    // border-top: 1px solid $color-light-grey;
 
     @media only screen and (min-width: 1024px) {
         width: 1024px;
@@ -27,5 +27,11 @@
     a:hover {
         // color: #4f515d;
         color: $color-neutral-grey;
+    }
+
+    a {
+        background-color: $color-link-highlight;
+        padding: 1px 4px;
+        border-radius: 5px;
     }
 }

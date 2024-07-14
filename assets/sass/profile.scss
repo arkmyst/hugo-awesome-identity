@@ -64,14 +64,23 @@
     }
 
     .bio {
-        font-size: 0.9rem;
+        font-size: 0.95rem; // 0.9rem originally 
 
         p {
-            margin-top: 0.9em;
+            margin-top: 0em; // paragraph spacing 0.05 or 0.45
+            line-height: 1.75; // paragraph line spacing
         }
 
         a:hover {
             color: initial;
+        }
+
+        a {
+            background-color: $color-link-highlight;
+            padding-right: 4px;
+            padding-bottom: 2px;
+            padding-left: 4px;
+            border-radius: 5px;
         }
     }
 
